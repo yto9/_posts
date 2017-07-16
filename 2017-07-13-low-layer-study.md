@@ -1,3 +1,6 @@
+---
+published: false
+---
 ## purpose
 #### presenter(yto9)
 - 自分の中での概念をdocumentとしてのアウトプット。
