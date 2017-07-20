@@ -1,4 +1,7 @@
 ---
+title: influencer marketing
+categories: [Thoughts]
+
 ---
 ## アイドルヲタクから見た、インフルエンサーマーケティング市場に対して思うこと
 

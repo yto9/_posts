@@ -1,5 +1,8 @@
 ---
 published: false
+title: Philosophy of Study
+categories: [Private]
+tags: [Books, Talk]
 ---
 ## 定義
 - "勉強" = 自己破壊 = radilcal learning 
