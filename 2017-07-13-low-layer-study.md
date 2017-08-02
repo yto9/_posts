@@ -27,7 +27,11 @@ tags: [Meetup, OS]
         - 抽象
         - 複雑性
         - 原始的要素核言語
-
+### what is current computer
+- ハードウェア
+- OS
+- ミドルウェア
+- アプリケーション
 ### <a href='/technology/how-computer-works/'> how computer works? </a>
 
 #### machine code
