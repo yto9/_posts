@@ -6,58 +6,83 @@ tags: [Meetup, OS]
 ---
 * Do not remove this line
 {:toc}
-## purpose
-#### presenter(yto9)
-- 自分の中での概念をdocumentとしてのアウトプット。
-- 文章、図、話し方。
 
-#### listener(gucchi)
-- ソフトウェアをハードとの接合面近くまで潜る。
-- 即時的な小手先の技術を求めているわけではないと想定
-## proposal
-- 俺が今感じているのと同程度にはソフトウェアをシンプルに捉えられる。
-- 今後のソフトウェア周りの学習効率が劇的に上がるはず
+## 主張 
+- ソフトウェアは最終的にはバイナリ
+        
+        - ソフトウェア？
+        - バイナリ，それはそう　なんで？
+                - 電気信号を0，1にしてるから
+                        
+                        - なんで？
+                - ハードウェア的制約
+                        
+                        - どこ？
+                        - ハードウェアって何？
+                        - ディジタルコンピュータ・アナログコンピュータ 
+                - 回路の安定状態(定常、過渡)
+                - 論理回路は物理的性質を問題にしない
+                        - 組み合わせ回路・順序回路
+                                - 組み合わせ回路・順序回路
+                                        - 順序回路は同期と非同期
+                                - ミーリーマシン・ムーアマシン
 
-## premise
-- 回路の電圧制御とかは理想的に動く
-## coverage
+                - ロジック: 論理回路 -> 電子回路
 
-### i think programming is...
-- CTMCP
-        - 抽象
-        - 複雑性
-        - 原始的要素核言語
-### what is current computer
-- ハードウェア
-- OS
-- ミドルウェア
-- アプリケーション
-### <a href='/technology/how-computer-works/'> how computer works? </a>
+                        - スイッチが必要
 
-#### machine code
-#### mnemonic
-#### major architechture
-- architechture(IEEE)
+                                - 後段ドライブ
+                                        - ドライブ能力が前段の入力からではなく，電源などから供給される
+                                - 直列/並列接続可能
+                                - 反転可能
+                        - 駆動
+                        - 多段接続可能性
+                        - 真空管・リレー
+                        - 二値 -　スイッチのon/off，and/or が直列/並列と対応 -> 多値は考えづらい
+                        - > 動作速度，大きさ，消費エネルギーなどの定量指標で選ばれる -> 半導体で出来たトランジスタが今んとこ
+                        - 電力消費と発熱が１番問題
+        - 半導体
+                - 電気抵抗率があれ
+                - シリコンがよく使われる
+                        - ドーピングでキャリアを増やす
+                - 移動度的にn型が主体
+                - ダイオード(p-n接合した素子)が便利
+                        - 整流
+                - 3端子の半導体素子トランジスタ
+                        - n-p-n, p-n-p
+                - 数Vで何桁も抵抗率の変化が可能
+                - スイッチがかなり小さい
+                - 高速
+                - エネルギーも極小
+        - CMOS
+                - 基本的に直流が後段に伝わらない
+                - 入出力特性が非線形 - ノイズに鈍感
+                - 遅延特性(容量)
+                - 直流が流れない
+        - 符号化:数値-> 0/1パターン
 
-#### what is your computer?
-### what is programming language for?
-#### history of programming language
-### what is OS?
-#### what is OS for
-#### what are differences btw Win, OSX, Ubuntu...?
-#### history of OSs
-### how programming languages are processed?
+        - 非同期式順序回路
+                - 記憶とロジックの分離がむずい
+                - ラッチとかFF
+                        - 非同期性をまとめて全体として同期素子として扱う
 
+        - SSDとHDD
 
-### where is difficulty of software from?
+        -　1つのLSIに数十億のトランジスタ
+        - 論理回路の完全性
+        - 情報システムの複雑さはどこから来ているのか
+## meetupにあたって
+- 実演すべきもの
 
-
+        - バイナリを見せる
+        - 16進1byte: xxd -g 1 
+        - 2進1byte: xxd -g 1 -b
+        - vim
 ## trial & error
 - 自分の思ってる概念図を書きたい。。。
 
         - Voronoi Diagram使うと楽しそう->今回は適切じゃないかな。。
         - 良いサービスみつからん。
-        - photoshop/illustratorは金かかる。。
         - とりあえずd3でいいか。いいの探し続けよう。
 
 - 概念図はmatrix diagramかnode-link diagramかって感じかなぁ  
@@ -71,3 +96,4 @@ tags: [Meetup, OS]
         - 次元が増えたら空間にするしかなさそう
         - Zoomable Area Chart 時系列と隆盛とかによさみかも
         - データ・セットいらない系はautodraw強そうｗ
+- 気を抜くと一瞬で脇道にそれるな…
