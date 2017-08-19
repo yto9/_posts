@@ -1,6 +1,6 @@
 ---
 title: lower software layer meetup 
-published: true
+published: false
 categories: [Technology]
 tags: [OS]
 ---
